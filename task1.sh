@@ -28,16 +28,6 @@ draw_example_board () {
 	done
 }
 
-win_condition_checker () {
-	#if [ "${board_fields[0]}" = "${board_fields[1]}" ] && [ "${board_fields[1]}" = "${board_fields[2]}" ]
-	#then
-		#return 1
-	#fi
-	#return 0
-	return 1
-}
-
-
 play_game () {
 	printf "oznaczenia pol\n"
 	draw_example_board
@@ -114,7 +104,6 @@ do
 
 printf "kolko i krzyzyk\n\n"
 printf "1. nowa gra\n"
-printf "2. wczytaj gre\n"
 printf "q. koniec\n\n"
 printf "podaj znak...\n"
 
