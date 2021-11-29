@@ -28,6 +28,16 @@ draw_example_board () {
 	done
 }
 
+win_condition_checker () {
+	#if [ "${board_fields[0]}" = "${board_fields[1]}" ] && [ "${board_fields[1]}" = "${board_fields[2]}" ]
+	#then
+		#return 1
+	#fi
+	#return 0
+	return 1
+}
+
+
 play_game () {
 	printf "oznaczenia pol\n"
 	draw_example_board
